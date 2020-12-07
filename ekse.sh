@@ -6,4 +6,4 @@ WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )-nbm
 
 cd "$(dirname "$0")"
 
-chmod +x ./nbminer && sudo ./nbminer -a etchash -o $POOL -u $WALLET.$WORKER $@
+chmod +x ./nbminer && sudo ./nbminer -a etchash --coin etc -o $POOL -u $WALLET.$WORKER $@
